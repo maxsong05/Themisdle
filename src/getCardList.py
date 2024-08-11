@@ -17,5 +17,8 @@ for line in cardreader:
 
     cardlist.append([name, url, type])
 
-
-print(cardlist)
+formatted_list = "[\n"
+for item in cardlist:
+    formatted_list += f"    {item},\n"
+formatted_list += "]"
+print(formatted_list) #can copy the result from terminal
